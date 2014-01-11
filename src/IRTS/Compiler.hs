@@ -15,6 +15,7 @@ import IRTS.CodegenLLVM
 #else
 import Util.LLVMStubs
 #endif
+import IRTS.CodegenCOBOL
 import IRTS.Inliner
 
 import Idris.AbsSyntax
@@ -90,6 +91,7 @@ compile codegen f tm
                               ViaNode ->
                                   codegenJavaScript Node c f outty
                               ViaLLVM -> codegenLLVM c triple cpu optimize f outty
+                              ViaCOBOL -> codegenCOBOL c f outty
                               Bytecode -> dumpBC c f
             Error e -> ierror e
   where checkMVs = do i <- getIState

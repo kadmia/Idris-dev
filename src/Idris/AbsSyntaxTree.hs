@@ -209,6 +209,7 @@ data Codegen = ViaC
              | ViaNode
              | ViaJavaScript
              | ViaLLVM
+             | ViaCOBOL
              | Bytecode
     deriving (Show, Eq)
 

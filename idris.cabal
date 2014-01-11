@@ -385,6 +385,7 @@ Library
                 , IRTS.CodegenCommon
                 , IRTS.CodegenJava
                 , IRTS.CodegenJavaScript
+                , IRTS.CodegenCOBOL
                 , IRTS.Compiler
                 , IRTS.Defunctionalise
                 , IRTS.DumpBC
